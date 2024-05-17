@@ -1,4 +1,5 @@
 from flask import Flask, request
+import os
 
 import functions
 
@@ -17,4 +18,7 @@ def health():
     return "OK"
 
 
-app.run(host='0.0.0.0', port=5000)
+port = os.environ["PORT"]
+
+
+app.run(host='0.0.0.0', port=port)
