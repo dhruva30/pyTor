@@ -11,4 +11,8 @@ def search_torrents():
     page = request.args.get("page")
     return functions.search_torrents(query, page)
 
-app.run(host='0.0.0.0', port=5000)
+
+@app.route("/", methods=["GET"])
+def health():
+    return "OK"
+
