@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-from src import functions
+import functions
 
 app = Flask(__name__)
 
