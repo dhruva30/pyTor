@@ -16,6 +16,3 @@ def search_torrents():
 @app.route("/", methods=["GET"])
 def health():
     return "OK"
-
-
-port = os.environ["PORT"]
